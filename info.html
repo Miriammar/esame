@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="utente.css">
+
+    <title>Gestione utenti</title>
+
+  </head>
+
+  <body>
+    
+    <header>
+      <h1 id="page-title" class="resource-title"></h1>
+      <button class="btn btn-success mb-3" onclick="goBack()">Torna indietro</button>
+    </header>
+
+    <div class="container">
+
+      <div class="spinner-container">
+        <div id="spinner-row" class="spinner-border" role="status">
+          <span class="visually-hidden">Attendi</span>
+        </div>
+      </div> 
+
+      <form id="user-form" class="d-none" novalidate>
+
+        <input type="hidden" id="user-id">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="name" required>
+          <span class="text-danger" id="name-error"></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Descrizione</label>
+          <input type="text" class="form-control" id="description" required>
+          <span class="text-danger" id="description-error"></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="username" class="form-label">Brand</label>
+          <input type="text" class="form-control" id="brand" required>
+          <span class="text-danger" id="brand-error"></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label">Immagine Url</label>
+          <input type="text" class="form-control" id="url" required>
+          <span class="text-danger" id="url-error"></span>
+        </div>
+        
+        <div class="mb-3">
+          <label for="city" class="form-label">Prezzo</label>
+          <input type="text" class="form-control" id="price" required>
+          <span class="text-danger" id="price-error"></span>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Salva</button>
+
+      </form>
+
+    </div>
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="prova.js"></script>    
+  </body>
+
+</html>
